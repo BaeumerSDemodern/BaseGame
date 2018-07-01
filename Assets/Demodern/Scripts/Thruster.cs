@@ -17,7 +17,7 @@ namespace Demodern
 		}
 		private void FixedUpdate() {
 			targetThrust = Input.GetButton("Fire1")?maxThrust:minThrust;
-			thrust = Mathf.Lerp (thrust,Mathf.Min(Mathf.Max(targetThrust,minThrust),maxThrust),Time.deltaTime*8f);
+			thrust = Mathf.Lerp (thrust,Mathf.Min(Mathf.Max(targetThrust,minThrust),maxThrust),Time.deltaTime);
 			rigid.AddForce (-transform.forward*thrust);			
 
 		}

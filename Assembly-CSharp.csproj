@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{F8B41E62-9F49-BF82-0430-1E4509CE0D47}</ProjectGuid>
+    <ProjectGuid>{7E600C5A-6917-33FF-5F47-95885DE6DCBB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -59,12 +59,16 @@
      <Compile Include="Assets\Demodern\Scripts\DebugObject.cs" />
      <Compile Include="Assets\Demodern\Scripts\GameLogic.cs" />
      <Compile Include="Assets\Demodern\Scripts\InteractionTrigger.cs" />
+     <Compile Include="Assets\Demodern\Scripts\LazyCopyTransform.cs" />
+     <Compile Include="Assets\Demodern\Scripts\PartJoint.cs" />
      <Compile Include="Assets\Demodern\Scripts\StateMachine.cs" />
- <Reference Include="Unity.PackageManagerUI.Editor">
- <HintPath>C:/Users/UltraAdmin/Desktop/GIT/BaseGame/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
- </Reference>
+     <Compile Include="Assets\Demodern\Scripts\Thruster.cs" />
+     <Compile Include="Assets\Demodern\Scripts\Wing.cs" />
  <Reference Include="UnityEditor.StandardEvents">
- <HintPath>C:/Users/UltraAdmin/Desktop/GIT/BaseGame/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+ <HintPath>C:/Users/UltraAdmin/Desktop/GIT/FightyPlanes/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.PackageManagerUI.Editor">
+ <HintPath>C:/Users/UltraAdmin/Desktop/GIT/FightyPlanes/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2018.1.5f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

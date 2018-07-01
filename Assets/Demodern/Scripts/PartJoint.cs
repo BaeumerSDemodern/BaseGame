@@ -7,7 +7,7 @@ namespace Demodern
 	{
 		private Rigidbody rigid;
 		private Rigidbody parent;
-		public float breakForce = 10f;
+		public float breakForce = 100f;
 		private void Start() {
 			rigid = GetComponent<Rigidbody> ();
 			parent = transform.parent.GetComponent<Rigidbody> ();
