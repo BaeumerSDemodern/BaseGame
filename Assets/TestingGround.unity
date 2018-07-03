@@ -148,6 +148,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   factor: 0.2
   straightenCourse: 1
+  bank: 0
+  hor: 0
+  ver: 0
 --- !u!54 &223617181
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -356,7 +359,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 666647652}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: -1}
+  m_LocalPosition: {x: 0, y: -0.09399986, z: -1}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 1937165544}
@@ -389,6 +392,7 @@ MonoBehaviour:
   minThrust: 0
   targetThrust: 0
   thrust: 0
+  speed: 0.1
 --- !u!54 &666647656
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -785,7 +789,7 @@ Transform:
   m_GameObject: {fileID: 1154411664}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.5, z: 0}
-  m_LocalScale: {x: 10000, y: 1, z: 10000}
+  m_LocalScale: {x: 500, y: 1, z: 500}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
@@ -839,6 +843,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1406857625}
+  - component: {fileID: 1406857626}
   m_Layer: 0
   m_Name: AirCraft
   m_TagString: Untagged
@@ -863,6 +868,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1406857626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1406857624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfd570e14453c804ea9b7344c4d26b10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thrusters:
+  - {fileID: 1551047558}
+  - {fileID: 666647655}
+  wings:
+  - {fileID: 223617180}
+  - {fileID: 1937165545}
 --- !u!1 &1480133016
 GameObject:
   m_ObjectHideFlags: 0
@@ -1088,7 +1110,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1551047553}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: -1}
+  m_LocalPosition: {x: 0, y: -0.094, z: -1}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 223617185}
@@ -1163,6 +1185,7 @@ MonoBehaviour:
   minThrust: 0
   targetThrust: 0
   thrust: 0
+  speed: 0.1
 --- !u!54 &1551047559
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1660,6 +1683,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   factor: 0.2
   straightenCourse: 1
+  bank: 0
+  hor: 0
+  ver: 0
 --- !u!54 &1937165546
 Rigidbody:
   m_ObjectHideFlags: 0

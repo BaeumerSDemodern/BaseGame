@@ -11,13 +11,13 @@ namespace Demodern
 		[Range(0,100)]
 		public float targetThrust = 0f;
 		public float thrust = 0f;
+		public float speed = 0.1f;
 
 		private void Start() {
 			rigid = GetComponent<Rigidbody>();
 		}
 		private void FixedUpdate() {
-			targetThrust = Input.GetButton("Fire1")?maxThrust:minThrust;
-			thrust = Mathf.Lerp (thrust,Mathf.Min(Mathf.Max(targetThrust,minThrust),maxThrust),Time.deltaTime);
+			thrust = Mathf.Lerp (thrust,Mathf.Min(Mathf.Max(targetThrust,minThrust),maxThrust),speed*Time.deltaTime);
 			rigid.AddForce (-transform.forward*thrust);			
 
 		}

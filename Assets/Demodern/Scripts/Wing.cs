@@ -14,6 +14,8 @@ namespace Demodern
 			rigid = GetComponent<Rigidbody> ();
 		}
 
+		public float bank, hor, ver;
+
 		private void FixedUpdate() {
 			Vector3 forwardVelocity = Vector3.Project (rigid.velocity, transform.forward);
 			float speed = forwardVelocity.magnitude;
@@ -22,12 +24,14 @@ namespace Demodern
 			rigid.AddForce(Vector3.Lerp(transform.up/transform.position.y,Vector3.zero,speed/10));
 
 			//add wasd
-			rigid.AddRelativeTorque(Input.GetAxis("Bank") * -Vector3.forward * 10f * speed);
-			rigid.AddRelativeTorque(Input.GetAxis("Horizontal") * Vector3.up * 10f * speed);
-			rigid.AddRelativeTorque(Input.GetAxis("Vertical") * Vector3.right * 10f * speed);
+			rigid.AddRelativeTorque(bank * -Vector3.forward * 5f * speed);
+			rigid.AddRelativeTorque(hor * Vector3.up * 5f * speed);
+			rigid.AddRelativeTorque(ver * Vector3.right * 5f * speed);
 
 			//tend to point at velocity
 			rigid.AddRelativeTorque (straightenCourse * Vector3.Cross(rigid.transform.forward, rigid.velocity) * speed);
+
+			rigid.drag = (rigid.velocity.magnitude*rigid.velocity.magnitude)/100f;
 		}
 	}
 }

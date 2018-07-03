@@ -57,6 +57,7 @@
      <Compile Include="Assets\Demodern\Scripts\CopyTransform.cs" />
      <Compile Include="Assets\Demodern\Scripts\Debugging.cs" />
      <Compile Include="Assets\Demodern\Scripts\DebugObject.cs" />
+     <Compile Include="Assets\Demodern\Scripts\FlyByWire.cs" />
      <Compile Include="Assets\Demodern\Scripts\GameLogic.cs" />
      <Compile Include="Assets\Demodern\Scripts\InteractionTrigger.cs" />
      <Compile Include="Assets\Demodern\Scripts\LazyCopyTransform.cs" />
@@ -64,6 +65,7 @@
      <Compile Include="Assets\Demodern\Scripts\StateMachine.cs" />
      <Compile Include="Assets\Demodern\Scripts\Thruster.cs" />
      <Compile Include="Assets\Demodern\Scripts\Wing.cs" />
+     <None Include="Assets\Demodern\Shaders\Water.shader" />
  <Reference Include="UnityEditor.StandardEvents">
  <HintPath>C:/Users/UltraAdmin/Desktop/GIT/FightyPlanes/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
  </Reference>
